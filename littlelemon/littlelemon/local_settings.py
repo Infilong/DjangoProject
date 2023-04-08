@@ -2,9 +2,9 @@ import os
 from pathlib import Path
 # Load the appropriate settings based on the environment
 if os.environ.get('ENVIRONMENT', 'development') == 'production':
-    from settings import *
-else:
     from local_settings import *
+else:
+    from settings import *
 
 """
 Django settings for littlelemon project.
@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'reservation'
+    'restaurant'
 ]
 
 MIDDLEWARE = [

@@ -25,6 +25,9 @@ router.register(r'tables', BookingViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('auth/', include('djoser.urls')),
+    path('auth/', include('djoser.urls.authtoken')),
+    
     path('restaurant/', include('restaurant.urls')),
 
     # URL pattern for the booking API, using the router to automatically generate the necessary URLs

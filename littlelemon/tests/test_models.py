@@ -1,7 +1,5 @@
 from django.test import TestCase
 from restaurant.models import Menu
-from restaurant.serializers import MenuSerializer
-from django.urls import reverse
 
 
 class MenuTest(TestCase):
